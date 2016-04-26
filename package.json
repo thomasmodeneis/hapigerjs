@@ -1,0 +1,45 @@
+{
+  "name": "hapigerjs",
+  "version": "1.0.0",
+  "description": "HapiGER NodeJS client",
+  "license": "MIT",
+  "author": {
+    "name": "Thomas Modeneis"
+  },
+  "homepage": "https://github.com/thomasmodeneis/hapigerjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasmodeneis/hapigerjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomasmodeneis/hapigerjs/issues"
+  },
+  "keywords": [
+    "HapiGER NodeJS Driver",
+    "machine learning"
+  ],
+  "dependencies": {
+    "bluebird": "^3.0.6",
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
+    "lodash": "^3.0.1",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "maintainers": [
+    {
+      "name": "Thomas Modeneis"
+    }
+  ]
+}
