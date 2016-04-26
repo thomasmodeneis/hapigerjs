@@ -30,10 +30,18 @@ describe('Testing HapiGER events', function () {
 		expect(instantiateEvents).to.throw(Error);
 	});
 
+    it('Driver should show namespaces', function () {
+        return expect(client.GET("/namespaces")).to.eventually.have.property('namespaces');
+    });
+
+    it('Driver should create namespace', function () {
+        return expect(client.POST("/namespaces",{namespace: "test"})).to.eventually.have.property('namespace');
+    });
+
 	it('Driver should create an event', function () {
 		return expect(client.POST("/events", {
 			events:[{
-				"namespace": "comments",
+				"namespace": "test",
 				"person": "Thomas",
 				"action": "view",
 				"thing": "ID-comentario-cretino"
@@ -44,7 +52,7 @@ describe('Testing HapiGER events', function () {
 	it('Driver should create another event', function () {
 		return expect(client.POST("/events", {
 			events:[{
-				"namespace": "comments",
+				"namespace": "test",
 				"person": "Fabio",
 				"action": "view",
 				"thing": "ID-comentario-cretino"
@@ -55,7 +63,7 @@ describe('Testing HapiGER events', function () {
 	it('Driver should create another event', function () {
 		return expect(client.POST("/events", {
 			events:[{
-				"namespace": "comments",
+				"namespace": "test",
 				"person": "Fabio",
 				"action": "buy",
 				"thing": "HairGel",
@@ -66,7 +74,7 @@ describe('Testing HapiGER events', function () {
 
 	it('Driver should recommend item to person ', function () {
 		return expect(client.POST("/recommendations", {
-				"namespace": "comments",
+				"namespace": "test",
 				"person": "Thomas",
 				"configuration": {
 					"actions" : {"view": 5, "buy": 10}
@@ -76,12 +84,6 @@ describe('Testing HapiGER events', function () {
 	});
 
 
-	it('Driver should show namespaces', function () {
-		return expect(client.GET("/namespaces")).to.eventually.have.property('namespaces');
-	});
 
-	it('Driver should create namespace', function () {
-		return expect(client.POST("/namespaces",{namespace: "test"})).to.eventually.have.property('namespace');
-	});
 
 });

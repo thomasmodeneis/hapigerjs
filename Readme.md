@@ -89,5 +89,21 @@ client.POST("/recommendations", {
   confidence: 0.0003639896269238396 }
 ```
 
+
+## Gulp will run tests for the project 
+```js
+gulp
+
+ 8   -_-_-_-_-_,------,
+ 0   -_-_-_-_-_|   /\_/\ 
+ 0   -_-_-_-_-^|__( ^ .^) 
+     -_-_-_-_-  ""  "" 
+
+  8 passing (167ms)
+
+```
+
+
+
 ## License 
 The MIT License (MIT)
