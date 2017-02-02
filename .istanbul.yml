@@ -2,7 +2,7 @@ verbose: false
 instrumentation:
     root: .
     default-excludes: true
-    excludes: ['test/**','dist/**','index.js']
+    excludes: ['test/**','dist/**','index.js','gulpfile.js']
     include-all-sources: true
 reporting:
     print: summary
@@ -16,8 +16,8 @@ reporting:
         branches: [50, 80]
 check:
     global:
-        statements: 66
-        lines: 66
-        branches: 54
-        functions: 63
+        statements: 82
+        lines: 82
+        branches: 66
+        functions: 70
         excludes: []
