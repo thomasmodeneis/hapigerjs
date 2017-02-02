@@ -95,19 +95,19 @@ client.POST("/recommendations", {
 [21:04:23] Starting 'default'...
 Using default URL http://localhost
 Using default PORT 3456
- 10  -_-_-_-_-_-_,------,
- 0   -_-_-_-_-_-_|   /\_/\
- 0   -_-_-_-_-_-^|__( ^ .^)
-     -_-_-_-_-_-  ""  ""
+ 18  -_-_-_-_-_-_-_-_-_-_,------,
+ 0   -_-_-_-_-_-_-_-_-_-_|   /\_/\
+ 0   -_-_-_-_-_-_-_-_-_-^|__( ^ .^)
+     -_-_-_-_-_-_-_-_-_-  ""  ""
 
-  10 passing (209ms)
+  18 passing (335ms)
 
-[21:04:24] Finished 'default' after 535 ms
+[22:49:29] Finished 'default' after 661 ms
 
 ```
 
 ## Coverage
-* [Code Coverage Report][coverage-url] from 10 Integration Tests
+* [Code Coverage Report][coverage-url] from 18 Integration Tests
 
 
 ## License 
