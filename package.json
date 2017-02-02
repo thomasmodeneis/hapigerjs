@@ -28,11 +28,17 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-mocha": "^2.2.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "istanbul": "0.4.5"
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "coverage": "npm run coverage:rm && npm run coverage:cover && npm run coverage:report && npm run coverage:check",
+    "coverage:cover": "istanbul cover node_modules/.bin/_mocha -- -R spec test/**/*",
+    "coverage:rm": "rm -Rf coverage",
+    "coverage:report": "istanbul report",
+    "coverage:check": "istanbul check-coverage ./coverage/coverage.json"
   },
   "engines": {
     "node": ">=0.10.0"

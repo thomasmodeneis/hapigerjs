@@ -92,18 +92,26 @@ client.POST("/recommendations", {
 
 ## Gulp will run tests for the project 
 ```js
-gulp
+[21:04:23] Starting 'default'...
+Using default URL http://localhost
+Using default PORT 3456
+ 10  -_-_-_-_-_-_,------,
+ 0   -_-_-_-_-_-_|   /\_/\
+ 0   -_-_-_-_-_-^|__( ^ .^)
+     -_-_-_-_-_-  ""  ""
 
- 8   -_-_-_-_-_,------,
- 0   -_-_-_-_-_|   /\_/\ 
- 0   -_-_-_-_-^|__( ^ .^) 
-     -_-_-_-_-  ""  "" 
+  10 passing (209ms)
 
-  8 passing (167ms)
+[21:04:24] Finished 'default' after 535 ms
 
 ```
 
+## Coverage
+* [Code Coverage Report][coverage-url] from 10 Integration Tests
 
 
 ## License 
 The MIT License (MIT)
+
+
+[coverage-url]: https://rawgit.com/thomasmodeneis/hapigerjs/master/coverage/lcov-report/index.html
