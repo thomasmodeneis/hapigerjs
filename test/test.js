@@ -83,6 +83,16 @@ describe('Testing HapiGER events', function () {
 		)).to.eventually.have.property('recommendations');
 	});
 
+    it('Driver should compact a namespace', function () {
+        return expect(client.POST("/compact", {
+                "namespace": "test"
+            }
+        )).to.eventually.have.property('init_count');
+    });
+
+    it('Driver should delete a namespace', function () {
+        return expect(client.DELETE("/namespace/test")).to.eventually.have.property('namespace');
+    });
 
 
 
